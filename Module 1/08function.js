@@ -26,3 +26,19 @@ FunHey();
 
 //callback function
 
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+
+function yesyes() {
+console.log( "You think you are a good coder." );
+}
+
+function nono() {
+console.log( "you don't think that you are a good coder." );
+}
+
+// usage: functions showOk, showCancel are passed as arguments to ask
+ask("Are you good Coder?", yesyes, nono);
